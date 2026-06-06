@@ -1,83 +1,126 @@
-﻿<svg width='1600' height='260' viewBox='0 0 1600 260' xmlns='http://www.w3.org/2000/svg'>
+﻿<svg width='1600' height='300' viewBox='0 0 1600 300' xmlns='http://www.w3.org/2000/svg'>
   <defs>
-    <linearGradient id='skyMist' x1='0' y1='0' x2='1' y2='1'>
-      <stop offset='0%' stop-color='#fdf7fb'/>
-      <stop offset='55%' stop-color='#f5fbff'/>
-      <stop offset='100%' stop-color='#eef9ff'/>
+    <linearGradient id='skyWash' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0%' stop-color='#fff9fc'/>
+      <stop offset='45%' stop-color='#f7fbff'/>
+      <stop offset='100%' stop-color='#eef8ff'/>
     </linearGradient>
-    <linearGradient id='trunkGrad' x1='0' y1='0' x2='1' y2='1'>
-      <stop offset='0%' stop-color='#6b4a47'/>
-      <stop offset='55%' stop-color='#8a635d'/>
-      <stop offset='100%' stop-color='#4e3534'/>
-    </linearGradient>
-    <radialGradient id='petalGlow' cx='50%' cy='45%' r='60%'>
-      <stop offset='0%' stop-color='#fffefe'/>
-      <stop offset='55%' stop-color='#ffd7e7'/>
-      <stop offset='100%' stop-color='#f2a8c5'/>
+    <radialGradient id='mistGlow' cx='50%' cy='45%' r='60%'>
+      <stop offset='0%' stop-color='#ffffff' stop-opacity='0.95'/>
+      <stop offset='55%' stop-color='#ffe2ee' stop-opacity='0.78'/>
+      <stop offset='100%' stop-color='#f8bdd4' stop-opacity='0.25'/>
     </radialGradient>
-    <filter id='softShadow' x='-30%' y='-30%' width='160%' height='160%'>
+    <linearGradient id='trunkFront' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0%' stop-color='#8d695f'/>
+      <stop offset='35%' stop-color='#5e3e3b'/>
+      <stop offset='70%' stop-color='#b18879'/>
+      <stop offset='100%' stop-color='#442b2b'/>
+    </linearGradient>
+    <linearGradient id='branchLight' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0%' stop-color='#e1c8bf' stop-opacity='0.95'/>
+      <stop offset='100%' stop-color='#8d695f' stop-opacity='0'/>
+    </linearGradient>
+    <radialGradient id='blossomCore' cx='50%' cy='42%' r='58%'>
+      <stop offset='0%' stop-color='#fffdfd'/>
+      <stop offset='28%' stop-color='#fff4f8'/>
+      <stop offset='62%' stop-color='#ffd9e8'/>
+      <stop offset='100%' stop-color='#f4abc7'/>
+    </radialGradient>
+    <radialGradient id='blossomDeep' cx='55%' cy='45%' r='60%'>
+      <stop offset='0%' stop-color='#fff8fb'/>
+      <stop offset='45%' stop-color='#ffcfe1'/>
+      <stop offset='100%' stop-color='#ec94b8'/>
+    </radialGradient>
+    <filter id='shadowBlur' x='-35%' y='-35%' width='170%' height='170%'>
       <feGaussianBlur stdDeviation='8' result='blur'/>
       <feMerge>
         <feMergeNode in='blur'/>
         <feMergeNode in='SourceGraphic'/>
       </feMerge>
     </filter>
-    <filter id='treeBlur' x='-10%' y='-10%' width='140%' height='140%'>
-      <feGaussianBlur stdDeviation='1.5'/>
+    <filter id='mistSoft' x='-20%' y='-20%' width='160%' height='160%'>
+      <feGaussianBlur stdDeviation='9'/>
+    </filter>
+    <filter id='petalSoft' x='-15%' y='-15%' width='150%' height='150%'>
+      <feGaussianBlur stdDeviation='1.4'/>
     </filter>
   </defs>
 
-  <rect width='1600' height='260' rx='34' fill='url(#skyMist)'/>
+  <rect width='1600' height='300' rx='36' fill='url(#skyWash)'/>
+  <ellipse cx='1110' cy='192' rx='305' ry='92' fill='url(#mistGlow)' filter='url(#mistSoft)' opacity='0.96'/>
+  <ellipse cx='980' cy='210' rx='240' ry='58' fill='#fdfdff' opacity='0.4' filter='url(#mistSoft)'/>
 
-  <path d='M36 92c136 17 232 4 334-18 117-26 214-31 310-15 103 17 172 41 277 34 120-8 171-46 280-47 102-1 169 20 327 53' stroke='#b7e3ef' stroke-width='7' fill='none' stroke-linecap='round' opacity='0.72'>
-    <animate attributeName='d' dur='10s' repeatCount='indefinite'
-      values='M36 92c136 17 232 4 334-18 117-26 214-31 310-15 103 17 172 41 277 34 120-8 171-46 280-47 102-1 169 20 327 53;
-              M36 100c152 8 240-11 339-24 110-14 207-13 303 8 102 22 170 42 276 33 112-10 165-38 275-39 111 0 181 29 336 58;
-              M36 92c136 17 232 4 334-18 117-26 214-31 310-15 103 17 172 41 277 34 120-8 171-46 280-47 102-1 169 20 327 53'/>
-  </path>
-  <path d='M14 144c138-23 234-34 339-16 93 16 153 43 270 46 124 4 212-43 320-47 111-4 196 18 327 47 122 27 217 37 330 15' stroke='#d5f1f9' stroke-width='4' fill='none' stroke-linecap='round' opacity='0.84'>
-    <animate attributeName='d' dur='11s' repeatCount='indefinite'
-      values='M14 144c138-23 234-34 339-16 93 16 153 43 270 46 124 4 212-43 320-47 111-4 196 18 327 47 122 27 217 37 330 15;
-              M14 136c125-16 225-40 332-27 112 14 164 46 271 51 116 6 198-35 313-38 127-4 214 28 336 51 112 21 205 23 334 1;
-              M14 144c138-23 234-34 339-16 93 16 153 43 270 46 124 4 212-43 320-47 111-4 196 18 327 47 122 27 217 37 330 15'/>
-  </path>
+  <g opacity='0.88'>
+    <path d='M28 108c166 16 278-9 388-31 138-28 251-28 361-6 110 22 182 42 298 33 128-10 186-52 305-52 104 0 172 18 330 51' stroke='#c3eaf3' stroke-width='8' fill='none' stroke-linecap='round'>
+      <animate attributeName='d' dur='11s' repeatCount='indefinite'
+        values='M28 108c166 16 278-9 388-31 138-28 251-28 361-6 110 22 182 42 298 33 128-10 186-52 305-52 104 0 172 18 330 51;
+                M28 116c182 6 286-22 397-39 124-19 242-12 353 13 108 24 182 42 293 34 118-9 180-44 298-44 111 0 186 26 339 59;
+                M28 108c166 16 278-9 388-31 138-28 251-28 361-6 110 22 182 42 298 33 128-10 186-52 305-52 104 0 172 18 330 51'/>
+    </path>
+    <path d='M16 162c138-18 250-36 357-24 104 12 162 48 289 57 131 9 226-31 349-40 120-10 211 13 349 43 123 27 232 38 360 17' stroke='#dff5fb' stroke-width='4.6' fill='none' stroke-linecap='round'>
+      <animate attributeName='d' dur='12s' repeatCount='indefinite'
+        values='M16 162c138-18 250-36 357-24 104 12 162 48 289 57 131 9 226-31 349-40 120-10 211 13 349 43 123 27 232 38 360 17;
+                M16 154c152-11 257-46 362-34 122 14 179 58 295 63 116 5 215-24 340-30 134-6 228 20 359 49 118 25 224 28 363 1;
+                M16 162c138-18 250-36 357-24 104 12 162 48 289 57 131 9 226-31 349-40 120-10 211 13 349 43 123 27 232 38 360 17'/>
+    </path>
+  </g>
 
-  <g transform='translate(980 10)'>
-    <path d='M212 212c-9-34-10-57-4-80 8-32 27-47 24-80-1-14-8-27-18-39 17 5 28 18 33 34 8 25-2 44 3 70 6 34 32 48 40 79 4 16 2 32-7 50-8-18-31-24-48-34-12-8-19-17-23-28Z' fill='url(#trunkGrad)' filter='url(#softShadow)'/>
-    <path d='M216 212c11-42 9-72-1-102-8-24-24-39-46-54-26-18-45-34-52-63 20 7 33 20 42 36 9 16 15 28 28 39 17 14 40 24 54 47 16 26 18 58 8 97Z' fill='url(#trunkGrad)' opacity='0.95'/>
-    <path d='M215 208c-4-42 4-70 20-95 13-21 34-34 59-46 31-15 57-31 73-59-2 22-12 37-27 50-15 13-28 21-39 35-14 17-25 42-49 61-20 15-42 24-68 54Z' fill='url(#trunkGrad)' opacity='0.92'/>
+  <g transform='translate(920 10)'>
+    <path d='M223 252c-8-43-7-72 4-103 8-25 18-43 17-70-1-20-9-35-18-49 21 10 36 26 41 48 8 31-4 53 1 85 4 27 20 42 30 64 12 26 14 55 7 92-12-21-34-29-52-41-16-10-25-17-30-26Z' fill='url(#trunkFront)' filter='url(#shadowBlur)'/>
+    <path d='M227 252c17-59 18-99 4-137-12-31-33-51-62-68-35-21-61-41-73-76 22 8 41 23 54 44 12 20 21 36 39 49 21 15 49 27 69 52 25 31 31 74 17 136Z' fill='url(#trunkFront)' opacity='0.96'/>
+    <path d='M224 248c-7-55 4-93 24-128 16-28 43-47 73-63 39-21 71-42 92-80-2 28-15 47-34 63-18 15-36 26-51 43-19 20-33 50-63 73-23 17-48 28-83 92Z' fill='url(#trunkFront)' opacity='0.95'/>
+    <path d='M213 112c14-40 16-79 7-111' stroke='url(#branchLight)' stroke-width='6' stroke-linecap='round' opacity='0.65'/>
+    <path d='M252 122c32-48 51-84 57-120' stroke='url(#branchLight)' stroke-width='4.5' stroke-linecap='round' opacity='0.48'/>
+    <path d='M182 126c-35-45-61-78-77-110' stroke='url(#branchLight)' stroke-width='4.5' stroke-linecap='round' opacity='0.48'/>
 
-    <g filter='url(#treeBlur)'>
-      <circle cx='218' cy='62' r='62' fill='url(#petalGlow)' opacity='0.98'/>
-      <circle cx='142' cy='82' r='54' fill='url(#petalGlow)' opacity='0.96'/>
-      <circle cx='306' cy='88' r='56' fill='url(#petalGlow)' opacity='0.95'/>
-      <circle cx='106' cy='132' r='44' fill='url(#petalGlow)' opacity='0.94'/>
-      <circle cx='354' cy='138' r='46' fill='url(#petalGlow)' opacity='0.93'/>
-      <circle cx='218' cy='132' r='72' fill='url(#petalGlow)' opacity='0.92'/>
-      <circle cx='255' cy='25' r='38' fill='#ffe6ef' opacity='0.88'/>
-      <circle cx='170' cy='22' r='34' fill='#fff4f8' opacity='0.82'/>
+    <g filter='url(#petalSoft)'>
+      <circle cx='225' cy='56' r='79' fill='url(#blossomCore)' opacity='0.99'/>
+      <circle cx='131' cy='85' r='68' fill='url(#blossomCore)' opacity='0.97'/>
+      <circle cx='336' cy='92' r='72' fill='url(#blossomCore)' opacity='0.97'/>
+      <circle cx='92' cy='154' r='55' fill='url(#blossomDeep)' opacity='0.95'/>
+      <circle cx='376' cy='156' r='58' fill='url(#blossomDeep)' opacity='0.95'/>
+      <circle cx='232' cy='142' r='90' fill='url(#blossomCore)' opacity='0.94'/>
+      <circle cx='276' cy='18' r='49' fill='#fff0f6' opacity='0.88'/>
+      <circle cx='168' cy='10' r='43' fill='#fff8fb' opacity='0.84'/>
+      <circle cx='292' cy='176' r='42' fill='#ffd2e4' opacity='0.85'/>
+      <circle cx='158' cy='190' r='38' fill='#ffe0ec' opacity='0.83'/>
     </g>
 
-    <g fill='#f4b6cf' opacity='0.95'>
-      <path d='M0 0c8 0 14 7 14 15 0 7-6 13-14 22-8-9-14-15-14-22C-14 7-8 0 0 0Z'>
-        <animateTransform attributeName='transform' type='translate' values='24 22;95 210' dur='7s' repeatCount='indefinite'/>
-        <animateTransform attributeName='transform' additive='sum' type='rotate' values='0 0 0;280 0 0' dur='5s' repeatCount='indefinite'/>
+    <g opacity='0.72'>
+      <circle cx='214' cy='42' r='18' fill='#ffffff'/>
+      <circle cx='121' cy='71' r='15' fill='#ffffff' opacity='0.85'/>
+      <circle cx='324' cy='74' r='17' fill='#ffffff' opacity='0.82'/>
+      <circle cx='260' cy='104' r='13' fill='#fffefc' opacity='0.76'/>
+    </g>
+
+    <g fill='#f5b4cf' opacity='0.98'>
+      <path d='M0 0c8 0 15 7 15 16 0 8-7 14-15 24-9-10-15-16-15-24C-15 7-9 0 0 0Z'>
+        <animateTransform attributeName='transform' type='translate' values='18 12;104 248' dur='7.6s' repeatCount='indefinite'/>
+        <animateTransform attributeName='transform' additive='sum' type='rotate' values='0 0 0;300 0 0' dur='5s' repeatCount='indefinite'/>
       </path>
-      <path d='M0 0c8 0 14 7 14 15 0 7-6 13-14 22-8-9-14-15-14-22C-14 7-8 0 0 0Z'>
-        <animateTransform attributeName='transform' type='translate' values='388 16;330 214' dur='8s' repeatCount='indefinite'/>
-        <animateTransform attributeName='transform' additive='sum' type='rotate' values='0 0 0;-300 0 0' dur='5.5s' repeatCount='indefinite'/>
+      <path d='M0 0c8 0 15 7 15 16 0 8-7 14-15 24-9-10-15-16-15-24C-15 7-9 0 0 0Z'>
+        <animateTransform attributeName='transform' type='translate' values='402 10;338 252' dur='8.1s' repeatCount='indefinite'/>
+        <animateTransform attributeName='transform' additive='sum' type='rotate' values='0 0 0;-310 0 0' dur='5.4s' repeatCount='indefinite'/>
       </path>
-      <path d='M0 0c8 0 14 7 14 15 0 7-6 13-14 22-8-9-14-15-14-22C-14 7-8 0 0 0Z'>
-        <animateTransform attributeName='transform' type='translate' values='200 0;182 224' dur='6.6s' repeatCount='indefinite'/>
-        <animateTransform attributeName='transform' additive='sum' type='rotate' values='0 0 0;310 0 0' dur='4.7s' repeatCount='indefinite'/>
+      <path d='M0 0c8 0 15 7 15 16 0 8-7 14-15 24-9-10-15-16-15-24C-15 7-9 0 0 0Z'>
+        <animateTransform attributeName='transform' type='translate' values='212 -4;182 258' dur='6.8s' repeatCount='indefinite'/>
+        <animateTransform attributeName='transform' additive='sum' type='rotate' values='0 0 0;330 0 0' dur='4.8s' repeatCount='indefinite'/>
+      </path>
+      <path d='M0 0c8 0 15 7 15 16 0 8-7 14-15 24-9-10-15-16-15-24C-15 7-9 0 0 0Z'>
+        <animateTransform attributeName='transform' type='translate' values='122 52;76 262' dur='8.8s' repeatCount='indefinite'/>
+        <animateTransform attributeName='transform' additive='sum' type='rotate' values='0 0 0;-290 0 0' dur='6.1s' repeatCount='indefinite'/>
+      </path>
+      <path d='M0 0c8 0 15 7 15 16 0 8-7 14-15 24-9-10-15-16-15-24C-15 7-9 0 0 0Z'>
+        <animateTransform attributeName='transform' type='translate' values='336 44;424 246' dur='7.9s' repeatCount='indefinite'/>
+        <animateTransform attributeName='transform' additive='sum' type='rotate' values='0 0 0;286 0 0' dur='5.7s' repeatCount='indefinite'/>
       </path>
     </g>
 
-    <g transform='translate(430 140)'>
-      <rect x='0' y='0' width='114' height='68' rx='16' fill='#fffdf7' stroke='#e9bfd0' stroke-width='3'/>
-      <rect x='16' y='16' width='82' height='14' rx='7' fill='#f8d8e5'/>
-      <text x='57' y='28' text-anchor='middle' font-size='10' font-family='Verdana, sans-serif' fill='#8d6080'>Visitors</text>
-      <text x='57' y='52' text-anchor='middle' font-size='18' font-family='Verdana, sans-serif' fill='#6f4b65'>Live Counter</text>
+    <g transform='translate(452 166)'>
+      <rect x='0' y='0' width='126' height='76' rx='18' fill='#fffef9' stroke='#ecc7d7' stroke-width='3'/>
+      <rect x='16' y='15' width='94' height='16' rx='8' fill='#f9dce8'/>
+      <text x='63' y='28' text-anchor='middle' font-size='11' font-family='Verdana, sans-serif' fill='#8d6080'>Visitors</text>
+      <text x='63' y='56' text-anchor='middle' font-size='20' font-family='Verdana, sans-serif' fill='#6a4960'>Live Counter</text>
     </g>
   </g>
 </svg>
