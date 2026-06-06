@@ -1,0 +1,21 @@
+﻿<svg width='1600' height='560' viewBox='0 0 1600 560' xmlns='http://www.w3.org/2000/svg'>
+  <defs>
+    <linearGradient id='sky' x1='0' y1='0' x2='0' y2='1'>
+      <stop offset='0%' stop-color='#ffe9f4'/>
+      <stop offset='55%' stop-color='#d8ecff'/>
+      <stop offset='100%' stop-color='#fef8ef'/>
+    </linearGradient>
+  </defs>
+  <rect width='1600' height='560' fill='url(#sky)'/>
+  <circle cx='1320' cy='118' r='48' fill='#fff4b0' opacity='0.85'/>
+  <path d='M0 430c180-54 340-70 484-47 127 20 197 40 307 31 122-10 183-50 329-45 151 6 285 64 480 61v130H0Z' fill='#8bb8d8'/>
+  <path d='M0 468c150-32 281-44 411-28 126 15 217 41 337 35 151-7 247-53 400-37 118 13 231 56 452 50v72H0Z' fill='#5d84a1'/>
+  <path d='M0 500c92-14 174-16 256-8 99 10 145 24 233 22 121-3 168-30 289-24 119 7 212 40 331 38 92-2 181-24 491-14v46H0Z' fill='#466b86'/>
+  <path d='M80 330c68-108 114-161 165-161 54 0 95 53 151 161' fill='none' stroke='#d28bad' stroke-width='16' stroke-linecap='round'/>
+  <circle cx='110' cy='252' r='28' fill='#ffd5e3'/>
+  <circle cx='142' cy='234' r='30' fill='#ffc5d8'/>
+  <circle cx='170' cy='268' r='26' fill='#ffe1ec'/>
+  <circle cx='205' cy='240' r='29' fill='#ffcade'/>
+  <circle cx='236' cy='270' r='28' fill='#ffd7e8'/>
+  <text x='800' y='510' text-anchor='middle' font-size='32' font-family='Verdana, sans-serif' fill='#ffffff'>Replace with your favorite anime-style landscape image link</text>
+</svg>
