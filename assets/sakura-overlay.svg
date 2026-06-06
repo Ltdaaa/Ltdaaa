@@ -1,29 +1,30 @@
-﻿<svg width='1600' height='240' viewBox='0 0 1600 240' xmlns='http://www.w3.org/2000/svg'>
-  <rect width='1600' height='240' fill='transparent'/>
+﻿<svg width='1600' height='150' viewBox='0 0 1600 150' xmlns='http://www.w3.org/2000/svg'>
+  <rect width='1600' height='150' fill='transparent'/>
   <g fill='#f7bfd4' opacity='0.85'>
     <path d='M0 0c9 0 16 8 16 17 0 8-7 14-16 25-9-11-16-17-16-25C-16 8-9 0 0 0Z'>
-      <animateTransform attributeName='transform' type='translate' values='110 0;170 240' dur='11s' repeatCount='indefinite'/>
+      <animateTransform attributeName='transform' type='translate' values='110 0;170 150' dur='11s' repeatCount='indefinite'/>
       <animateTransform attributeName='transform' additive='sum' type='rotate' values='0 0 0;360 0 0' dur='7s' repeatCount='indefinite'/>
     </path>
     <path d='M0 0c9 0 16 8 16 17 0 8-7 14-16 25-9-11-16-17-16-25C-16 8-9 0 0 0Z'>
-      <animateTransform attributeName='transform' type='translate' values='360 -10;310 240' dur='13s' repeatCount='indefinite'/>
+      <animateTransform attributeName='transform' type='translate' values='360 -10;310 150' dur='13s' repeatCount='indefinite'/>
       <animateTransform attributeName='transform' additive='sum' type='rotate' values='0 0 0;-280 0 0' dur='9s' repeatCount='indefinite'/>
     </path>
     <path d='M0 0c9 0 16 8 16 17 0 8-7 14-16 25-9-11-16-17-16-25C-16 8-9 0 0 0Z'>
-      <animateTransform attributeName='transform' type='translate' values='620 0;690 250' dur='12s' repeatCount='indefinite'/>
+      <animateTransform attributeName='transform' type='translate' values='620 0;690 155' dur='12s' repeatCount='indefinite'/>
       <animateTransform attributeName='transform' additive='sum' type='rotate' values='0 0 0;300 0 0' dur='8s' repeatCount='indefinite'/>
     </path>
     <path d='M0 0c9 0 16 8 16 17 0 8-7 14-16 25-9-11-16-17-16-25C-16 8-9 0 0 0Z'>
-      <animateTransform attributeName='transform' type='translate' values='890 -8;830 240' dur='15s' repeatCount='indefinite'/>
+      <animateTransform attributeName='transform' type='translate' values='890 -8;830 150' dur='15s' repeatCount='indefinite'/>
       <animateTransform attributeName='transform' additive='sum' type='rotate' values='0 0 0;-240 0 0' dur='10s' repeatCount='indefinite'/>
     </path>
     <path d='M0 0c9 0 16 8 16 17 0 8-7 14-16 25-9-11-16-17-16-25C-16 8-9 0 0 0Z'>
-      <animateTransform attributeName='transform' type='translate' values='1190 0;1250 245' dur='10s' repeatCount='indefinite'/>
+      <animateTransform attributeName='transform' type='translate' values='1190 0;1250 152' dur='10s' repeatCount='indefinite'/>
       <animateTransform attributeName='transform' additive='sum' type='rotate' values='0 0 0;320 0 0' dur='6s' repeatCount='indefinite'/>
     </path>
     <path d='M0 0c9 0 16 8 16 17 0 8-7 14-16 25-9-11-16-17-16-25C-16 8-9 0 0 0Z'>
-      <animateTransform attributeName='transform' type='translate' values='1450 -12;1380 245' dur='14s' repeatCount='indefinite'/>
+      <animateTransform attributeName='transform' type='translate' values='1450 -12;1380 152' dur='14s' repeatCount='indefinite'/>
       <animateTransform attributeName='transform' additive='sum' type='rotate' values='0 0 0;-300 0 0' dur='9s' repeatCount='indefinite'/>
     </path>
   </g>
 </svg>
+
