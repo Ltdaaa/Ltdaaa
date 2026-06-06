@@ -1,8 +1,4 @@
-﻿<div align='center'>
-  <img src='./assets/sakura-overlay.svg' width='100%' alt='Animated falling sakura petals' />
-</div>
-
-<p align='center'>
+﻿<p align='center'>
   <img src='./assets/sakura-tree-banner.svg' width='100%' alt='3D sakura tree banner with breeze and falling petals' />
 </p>
 
@@ -29,3 +25,4 @@
 <p align='center'>
   <a href='./assets/landscape-video.mp4'>Open the video directly</a>
 </p>
+
