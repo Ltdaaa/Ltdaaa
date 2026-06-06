@@ -19,3 +19,11 @@
 <div align='center'>
   <img src='./assets/sakura-overlay.svg' width='100%' alt='More falling sakura petals' />
 </div>
+
+<div align='center'>
+  <video src='./assets/landscape-video.mp4' width='100%' controls muted loop playsinline></video>
+</div>
+
+<p align='center'>
+  <a href='./assets/landscape-video.mp4'>Open the video directly if GitHub does not render the embedded player</a>
+</p>
