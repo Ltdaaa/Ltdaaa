@@ -21,9 +21,11 @@
 </div>
 
 <div align='center'>
-  <video src='./assets/landscape-video.mp4' width='100%' controls muted loop playsinline></video>
+  <a href='./assets/landscape-video.mp4'>
+    <img src='./assets/landscape-video-cover.svg' width='100%' alt='Open the landscape video' />
+  </a>
 </div>
 
 <p align='center'>
-  <a href='./assets/landscape-video.mp4'>Open the video directly if GitHub does not render the embedded player</a>
+  <a href='./assets/landscape-video.mp4'>Open the video directly</a>
 </p>

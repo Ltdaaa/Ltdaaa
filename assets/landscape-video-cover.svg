@@ -1,0 +1,69 @@
+<svg width='1600' height='900' viewBox='0 0 1600 900' xmlns='http://www.w3.org/2000/svg'>
+  <defs>
+    <linearGradient id='sky' x1='0' y1='0' x2='0' y2='1'>
+      <stop offset='0%' stop-color='#fff2f8'/>
+      <stop offset='42%' stop-color='#dff0ff'/>
+      <stop offset='100%' stop-color='#fff8ef'/>
+    </linearGradient>
+    <linearGradient id='peak' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0%' stop-color='#fefefe'/>
+      <stop offset='100%' stop-color='#cfe1ff'/>
+    </linearGradient>
+    <linearGradient id='water' x1='0' y1='0' x2='1' y2='0'>
+      <stop offset='0%' stop-color='#7fb6d9'/>
+      <stop offset='50%' stop-color='#a4d7f0'/>
+      <stop offset='100%' stop-color='#6fa3ca'/>
+    </linearGradient>
+    <filter id='glow' x='-25%' y='-25%' width='150%' height='150%'>
+      <feGaussianBlur stdDeviation='9' result='blur'/>
+      <feMerge>
+        <feMergeNode in='blur'/>
+        <feMergeNode in='SourceGraphic'/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width='1600' height='900' rx='36' fill='url(#sky)'/>
+  <circle cx='1295' cy='152' r='64' fill='#fff2b6' opacity='0.82'/>
+  <ellipse cx='840' cy='258' rx='510' ry='118' fill='#ffffff' opacity='0.34' filter='url(#glow)'/>
+
+  <path d='M0 706c145-42 265-64 382-62 138 2 219 35 339 37 135 3 225-39 360-42 150-3 295 42 519 27v234H0Z' fill='#82b6d4'/>
+  <path d='M0 760c120-28 250-42 372-34 119 8 204 32 324 29 144-3 228-44 379-41 136 2 274 43 525 31v155H0Z' fill='#5f8baa'/>
+  <path d='M0 812c135-17 247-15 360-1 106 14 178 28 288 26 141-2 211-29 344-22 130 7 244 34 608 23v62H0Z' fill='#45657f'/>
+
+  <path d='M726 638 900 250 1068 638Z' fill='url(#peak)'/>
+  <path d='M826 638 902 356 980 638Z' fill='#eaf4ff'/>
+  <path d='M702 638c69-93 103-160 126-239 29 31 47 68 58 110 14 53 15 85 11 129Z' fill='#c7ddf5' opacity='0.65'/>
+
+  <path d='M90 464c84-134 142-196 206-196 69 0 121 62 194 196' fill='none' stroke='#d793b2' stroke-width='20' stroke-linecap='round'/>
+  <circle cx='130' cy='362' r='34' fill='#ffd9e7'/>
+  <circle cx='173' cy='336' r='38' fill='#ffc8db'/>
+  <circle cx='214' cy='375' r='31' fill='#ffe4ee'/>
+  <circle cx='260' cy='340' r='37' fill='#ffcade'/>
+  <circle cx='302' cy='377' r='34' fill='#ffd8e7'/>
+  <circle cx='336' cy='349' r='29' fill='#ffeaf1'/>
+
+  <g fill='#f4b5cf' opacity='0.95'>
+    <path d='M0 0c9 0 16 8 16 17 0 8-7 14-16 25-9-11-16-17-16-25C-16 8-9 0 0 0Z'>
+      <animateTransform attributeName='transform' type='translate' values='456 124;530 756' dur='11s' repeatCount='indefinite'/>
+      <animateTransform attributeName='transform' additive='sum' type='rotate' values='0 0 0;320 0 0' dur='7s' repeatCount='indefinite'/>
+    </path>
+    <path d='M0 0c9 0 16 8 16 17 0 8-7 14-16 25-9-11-16-17-16-25C-16 8-9 0 0 0Z'>
+      <animateTransform attributeName='transform' type='translate' values='1188 94;1110 734' dur='12s' repeatCount='indefinite'/>
+      <animateTransform attributeName='transform' additive='sum' type='rotate' values='0 0 0;-285 0 0' dur='8s' repeatCount='indefinite'/>
+    </path>
+    <path d='M0 0c9 0 16 8 16 17 0 8-7 14-16 25-9-11-16-17-16-25C-16 8-9 0 0 0Z'>
+      <animateTransform attributeName='transform' type='translate' values='864 150;790 770' dur='10s' repeatCount='indefinite'/>
+      <animateTransform attributeName='transform' additive='sum' type='rotate' values='0 0 0;300 0 0' dur='6s' repeatCount='indefinite'/>
+    </path>
+  </g>
+
+  <g transform='translate(702 374)'>
+    <circle cx='98' cy='98' r='92' fill='#fffdfd' opacity='0.92' filter='url(#glow)'/>
+    <circle cx='98' cy='98' r='84' fill='#fff8fb' stroke='#f0bfd3' stroke-width='6'/>
+    <polygon points='74,58 74,138 144,98' fill='#f3a8c5'/>
+  </g>
+
+  <text x='800' y='724' text-anchor='middle' font-size='54' font-family='Verdana, sans-serif' fill='#ffffff'>Open Landscape Video</text>
+  <text x='800' y='786' text-anchor='middle' font-size='26' font-family='Verdana, sans-serif' fill='#fdf4fa'>GitHub profile safe preview card</text>
+</svg>
